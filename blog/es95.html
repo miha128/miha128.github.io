@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <style>
+        div {
+            background-color: #95a47d;
+            color: white;
+            border: 3px #76885B solid;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        html,footer {
+            font-family: monospace;
+            text-align: center;
+            background-color: #EEEEEE;
+        }
+        p, sup {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        a {
+            color: #dcffa7;
+            text-align: left;
+        }
+        img {
+            height: 200px;
+        }
+        code {
+            background-color: black;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="https://github.com/miha128/miha128.github.io">source</a>
+        <span>\</span>
+        <a href="https://twitter.com/M0THERLIZZY">twt</a>
+        <span>\</span>
+        <a href="https://miha128.github.io">main site</a>
+        <h1>Samsung ES95</h1>
+        <p>the ES95 is a point-and-shoot camera released in ~2011 for the budget camera market. you can find it now for around 30-60€ used. it shoots 720p@30,15fps video, 4608x3456 (max) jpeg photos. iLauncher is bundled with it, it can be disabled in the menu. (not that it would work in 2024)</p>
+        <h3>Image:</h3>
+        <img src="es95.jpg">
+        <h3>Notes:</h3>
+        <p>the .avi video files recorded are in a .avi container, but the video file is in MJPEG format, with the audio being in PCM signed 16-bit little-endian format. ffprobe below.</p>
+        <code>  Duration: 00:00:20.77, start: 0.000000, bitrate: 32150 kb/s
+            <br>Stream #0:0: Video: mjpeg (Baseline) (MJPG / 0x47504A4D), yuvj422p(pc, bt470bg/unknown/unknown), 1280x720, 31837 kb/s, 30 fps, 30 tbr, 30 tbn
+            <br>Stream #0:1: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 22050 Hz, 1 channels, s16, 352 kb/s
+          </code>
+    </div>
+</body>
+</html>
