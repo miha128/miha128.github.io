@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <noscript><p style="text-align: center;">you have javascript disabled, the tabs probably won't work. enable js for me i'm not evil i promise 🙏🙏</p></noscript>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my site</title>
@@ -22,18 +23,29 @@
       </div>
     </div>
     <div class="window-body has-space">
+      <section class="tabs">
+        <menu role="tablist" aria-label="tabs">
+          <button role="tab" aria-controls="tab-A" aria-selected="true">me</button>
+          <button role="tab" aria-controls="tab-B">my socials</button>
+          <button role="tab" aria-controls="tab-C">creds</button>
+        </menu>
+        <article role="tabpanel" id="tab-A">
         <h3>hi! welcome to my site</h3>
         <p>hi! i'm miha and welcome to my website! i don't really write a lot here but here's my <a href="https://miha128.github.io/blog/">blog</a> that's mostly going to have stuff about iot devices and/or just normal computers. beside that i am probably doing various things in my free time</p>
         <p>not that anyone cares but linux has always piqued my interest for as long as i can remember, you can do anything your heart desires if you have superuser access, build software more easily and debug it without having to install non-foss software</p>
         <p>that's it! feel free to check out the links in the window title</p>
         <section class="field-row" style="justify-content: flex-end">
-        <button class="default" onclick=document.location="https://burgerpssy.000webhostapp.com">okay HOE wheres the thing</button>  
-        </div>
-    <div class="status-bar">
-        <p style="font-weight: bolder;">This site is property of just kidding it's under the gnu gpl license credit me if you edit it to your liking <br> :3</p>
-        <sup>speaking of credits THANK YEWWW to the people behind 7.css</sup>
-      </div>
+        <button class="default" onclick=document.location="https://burgerpssy.000webhostapp.com">okay HOE wheres the thing</button></article>
+        <article role="tabpanel" id="tab-B" hidden=""><a href="https://github.com/miha128/miha128.github.io">spacehey (myspace clone)</a>
+        <p>my discord: burgerpussy</p>
+        <p>chicken@escargot.chat - wlm revive (escargot.chat)</p>
+        <a href="https://www.instagram.com/exxciteme_/">my instagram</a>
+        <p>my telegram: @ineedmyrosetoy</p>
+        <a href="https://www.roblox.com/users/467287743/profile">roblox...</a></article>
+        <article role="tabpanel" id="tab-C" hidden=""><p>thanks to <a href="https://khang-nd.github.io/7.css/">7.css</a> for the windows 7 framework!! also i may have stolen a part of script.js sorry about that</article>
+          <p style="font-weight: bolder; font-size: 1em;">This site is property of just kidding it's under the gnu gpl license credit me if you edit it :3</p>
+      </section>
 </div>
 </body>
-
+<script src="s.js"></script>
 </html>
