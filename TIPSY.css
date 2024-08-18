@@ -10,10 +10,11 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    background-image: url(back.jpg);
+    background-image: url(back.png);
     background-attachment: fixed; 
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: 50% 50%;  
 }
 div {
     text-align: center;
@@ -26,5 +27,14 @@ div {
 }
 .red::before,
 .red > .title-bar {
-  background-color: #911e31;
+  background-color: #52111c;
+}
+sup,a {
+    font-weight: bold;
+    color: #52111c;
+}
+
+img {
+    height: 2.5em;
+    padding-left: 1em;
 }
