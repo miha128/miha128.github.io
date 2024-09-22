@@ -1,0 +1,43 @@
+:root {
+    --accent: #285d51;
+  }
+
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url(background.jpg);
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;  
+}
+div {
+    text-align: center;
+}
+.status-bar {
+    text-align: center;
+    position: relative;
+    display:grid;
+}
+.accent::before,
+.accent > .title-bar {
+  background-color: var(--accent);
+}
+sup,a {
+    font-weight: bold;
+    color: var(--accent)
+}
+
+img {
+    height: 2.5em;
+    padding-left: 1em;
+}

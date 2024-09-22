@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es95</title>
+    <link rel="stylesheet" href="blogstyle.css">
+</head>
+<body style="background-color: rgb(236, 243, 252); color: #3442be;">
+    <div>
+        <a href="https://miha128.github.io">main site</a>
+        <span>\</span>
+        <a href="https://miha128.github.io/blog/">blog</a>
+        <h1>Samsung ES95</h1>
+        <p>the ES95 is a point-and-shoot camera released in ~2013 for the budget camera market. you can find it now for around 30-60€ used. it shoots 720p/480p/240p@30,15fps video, 4608x3456 (max) jpeg photos. iLauncher is bundled with it, it can be disabled in the menu. (not that it would work in 2024)</p>
+        <p>sensor is of CCD type, outputting analog signals, it's got a 16.1MP max photo resolution, lens is 25mm. i have yet to find out how to read firmware from the NAND. aside from that the screen measures 6.8cm and disposing of a singular 3.7V 0.74Ah lithium-ion battery, measuring 40x31x6mm. </p>
+        <h3>Image:</h3>
+        <img src="es95.jpg">
+        <h3>Notes:</h3>
+        <p>the .avi video files recorded are in a .avi container, but the video file is in MJPEG format, with the audio being in PCM signed 16-bit little-endian format. ffprobe below.</p>
+        <code style="background-color: rgb(0, 0, 0); color: white;">  Duration: 00:00:20.77, start: 0.000000, bitrate: 32150 kb/s
+            <br>Stream #0:0: Video: mjpeg (Baseline) (MJPG / 0x47504A4D), yuvj422p(pc, bt470bg/unknown/unknown), 1280x720, 31837 kb/s, 30 fps, 30 tbr, 30 tbn
+            <br>Stream #0:1: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 22050 Hz, 1 channels, s16, 352 kb/s
+          </code>
+    </div>
+</body>
+</html>
